@@ -1,1 +1,1 @@
-branch merge is quick & simple
+branch merge is quick AND simple
