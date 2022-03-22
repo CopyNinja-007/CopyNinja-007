@@ -10,7 +10,7 @@ import com.homework.entity.UltraMan;
  * @modified By:
  * @version: 1.0.0
  */
-public class Test04 {
+public class TestUltraManAndMonster {
     public static void main(String[] args) {
         UltraMan ultraMan = new UltraMan("咸蛋超人",250,800);
         Monster monster = new Monster("哥斯拉",160,500);
