@@ -51,12 +51,22 @@ public class Monster {
 
     public void powerAttack(UltraMan ultraMan) {
         
-        if (ultraMan.getHp() > 0) {
-            System.out.println(getName() + "使用了蛮力攻击");
+        if (ultraMan.getHp() > 0 && getHp() > 0) {
             ultraMan.setHp(ultraMan.getHp() - this.attack);
+            if (ultraMan.getHp() < 0) {
+                ultraMan.setHp(0);
+            }
+            System.out.println(getName() + "使用了蛮力攻击," + ultraMan.getName() + "血量剩余:" + ultraMan.getHp());
         }
         if (ultraMan.getHp() <= 0) {
             System.out.println(ultraMan.getName() + "被击败");
+        }
+    }
+
+    public void reflectSkill(UltraMan ultraMan) {
+        if (getHp() > 0) {
+            ultraMan.setHp(ultraMan.getHp()-(int)(ultraMan.getAttack()*0.1));
+            System.out.println(getName() +"使用了反射攻击," + ultraMan.getName() + "血量剩余:" + ultraMan.getHp());
         }
     }
 }

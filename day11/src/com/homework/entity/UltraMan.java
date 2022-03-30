@@ -49,9 +49,13 @@ public class UltraMan {
         System.out.println(getName() + "使用了飞行技能");
     }
     public void lightAttack(Monster monster) {
-        if (monster.getHp() > 0) {
-            System.out.println(getName() + "使用了光线攻击");
+        if (monster.getHp() > 0 && getHp() > 0) {
             monster.setHp(monster.getHp() - this.attack);
+            if (monster.getHp() < 0){
+                monster.setHp(0);
+            }
+            System.out.println(getName() + "使用了光线攻击," + monster.getName() + "血量剩余:" + monster.getHp());
+            monster.reflectSkill(this);
         }
         if (monster.getHp() <= 0) {
             System.out.println(monster.getName() + "被击败");
