@@ -1,0 +1,21 @@
+类名:class com.sun.java.util.jar.pack.DriverResource
+------------属性------------
+public static final	String	VERSION
+public static final	String	BAD_ARGUMENT
+public static final	String	BAD_OPTION
+public static final	String	BAD_REPACK_OUTPUT
+public static final	String	DETECTED_ZIP_COMMENT
+public static final	String	SKIP_FOR_REPACKED
+public static final	String	WRITE_PACK_FILE
+public static final	String	WRITE_PACKGZ_FILE
+public static final	String	SKIP_FOR_MOVE_FAILED
+public static final	String	PACK_HELP
+public static final	String	UNPACK_HELP
+public static final	String	MORE_INFO
+public static final	String	DUPLICATE_OPTION
+public static final	String	BAD_SPEC
+private static final	Object[][]	resource
+------------方法------------
+protected	Object[][]	getContents()
+----------构造方法----------
+public	DriverResource()

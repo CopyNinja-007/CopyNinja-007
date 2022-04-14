@@ -1,0 +1,21 @@
+类名:class com.learn.model.Company
+------------属性------------
+private	int	id
+private	String	name
+private	String	address
+public	String	phone
+------------方法------------
+public	String	getAddress()
+public	String	getName()
+public	int	getId()
+public	void	setName(String)
+private	String	test()
+public	void	setAddress(String)
+public	void	setId(int)
+public	void	setPhone(String)
+public	void	produce()
+public	String	getPhone()
+----------构造方法----------
+public	Company(int, String, String, String)
+public	Company()
+public	Company(int, String, String)
