@@ -1,1 +1,1 @@
-git is a very quicly and simple tool
+git is a very quicly & simple tool
